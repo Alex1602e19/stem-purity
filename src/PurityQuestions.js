@@ -1,6 +1,6 @@
 const PurityQuestions = [
   {
-    content: "Held hands romantically?",
+    content: "Approximated pi as 3?",
     weight: 1
   },
   {
