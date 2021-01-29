@@ -79,10 +79,10 @@
                     }, "Cumulative Score"))))))))
                 },
                 w = [{
-                    content: "Held hands romantically?",
+                    content: "Approximated pi as 3?",
                     weight: 1
                 }, {
-                    content: "Been on a date?",
+                    content: "Forgotten \"+C\"?",
                     weight: 1
                 }, {
                     content: "Been in a relationship?",
