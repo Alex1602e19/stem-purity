@@ -376,8 +376,11 @@
                     content: "Committed an act of incest?",
                     weight: 5
                 }, {
-                    content: "Engaged in bestiality?",
+                    content: "Committed an act of incest?",
                     weight: 5
+                }, {
+                    content: "Testing?",
+                    weight: 10
                 }],
                 g = function(e) {
                     Object(m.a)(a, e);
