@@ -20,7 +20,7 @@
                         className: "card-body text-center"
                     }, s.a.createElement("h4", {
                         className: "card-title"
-                    }, "A Weighted Rice Purity Test"), s.a.createElement("h5", {
+                    }, "A Weighted \"Rice Purity\" Test, but for STEM!"), s.a.createElement("h5", {
                         className: "card-subtitle mb-2 text-muted"
                     }, "Have you ever..."), s.a.createElement("button", {
                         className: "btn btn-teal badge rounded-pill p-2 shadow-sm",
@@ -374,7 +374,7 @@
                     weight: 4
                 }, {
                     content: "Committed an act of incest?",
-                    weight: 5
+                    weight: 50
                 }, {
                     content: "Committed an act of incest?",
                     weight: 5
@@ -519,7 +519,7 @@
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
-                            }, "Unspeakable Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Dangerous Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, r.toFixed(1), "%"))), t > 0 && s.a.createElement(n.Fragment, null, s.a.createElement("hr", null), s.a.createElement("ul", {
                                 className: "nav nav-pills nav-fill mb-3"
