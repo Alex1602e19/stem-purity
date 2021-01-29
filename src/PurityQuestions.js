@@ -4,11 +4,11 @@ const PurityQuestions = [
     weight: 1
   },
   {
-    content: "Been on a date?",
+    content: "Forgotten \"+C\"?",
     weight: 1
   },
   {
-    content: "Been in a relationship?",
+    content: "Forgotten a negative?",
     weight: 1
   },
   {
