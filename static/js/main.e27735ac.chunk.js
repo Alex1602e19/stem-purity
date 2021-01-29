@@ -80,7 +80,7 @@
                 },
                 w = [{
                     content: "Approximated pi as 3?",
-                    weight: 1
+                    weight: 5
                 }, {
                     content: "Forgotten \"+C\"?",
                     weight: 1
