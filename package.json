@@ -1,6 +1,6 @@
 {
   "homepage": "http://senguyen1011.github.io/state-purity",
-  "name": "state-purity",
+  "name": "stem-state-purity",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
