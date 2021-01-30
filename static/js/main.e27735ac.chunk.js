@@ -85,7 +85,7 @@ var t5 = 0;
                         className: "row"
                     }, s.a.createElement("h3", {
                         className: "font-weight-bolder"
-                    }, "State Purity")), s.a.createElement("div", {
+                    }, "STEM Purity")), s.a.createElement("div", {
                         className: "row"
                     }, s.a.createElement("div", {
                         className: "col"
@@ -111,7 +111,7 @@ var t5 = 0;
                         for (var n = arguments.length, s = new Array(n), i = 0; i < n; i++) s[i] = arguments[i];
                         return (e = t.call.apply(t, [this].concat(s))).handleCheck = function(t, a) {
                             var n = a.content;
-                            n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.type, n) : e.props.onCheck(-1 * a.type, n)
+                            n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.weight, n, a.type) : e.props.onCheck(-1 * a.weight, n, a.type)
                             //Total each subject
                             if (type == 1) {
                                 t1 = t1 + 1
@@ -158,7 +158,7 @@ var t5 = 0;
                         }, e)
                     })) : s.a.createElement("li", {
                         className: "list-group-item shadow-sm text-center text-muted"
-                    }, "No acts commited of this severity")
+                    }, "No offenses in this subject.")
                 },
                 b = function(e) {
                     Object(m.a)(a, e);
@@ -225,19 +225,19 @@ var t5 = 0;
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w1), s.a.createElement("h6", {
                                 className: "text-info mb-0"
-                            }, "Science Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Science Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w2), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
-                            }, "Technology Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Technology Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w3), s.a.createElement("h6", {
                                 className: "text-success mb-0"
-                            }, "Engineering Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Engineering Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, o.toFixed(1), "%"))), s.a.createElement("div", {
                                 className: "row text-center"
@@ -245,13 +245,13 @@ var t5 = 0;
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w4), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
-                            }, "Mathematic Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Mathematic Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
-                            }, "Other Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Other Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, r.toFixed(1), "%"))), t > 0 && s.a.createElement(n.Fragment, null, s.a.createElement("hr", null), s.a.createElement("ul", {
                                 className: "nav nav-pills nav-fill mb-3"
@@ -317,14 +317,14 @@ var t5 = 0;
 
                     function a() {
                         var e;
-                        return Object(r.a)(this, a), (e = t.call(this)).updateScore = function(t, a) {
+                        return Object(r.a)(this, a), (e = t.call(this)).updateScore = function(t, a, type) { 
                             t = Number(t), e.setState({
                                 score: e.state.score + t,
                                 count: e.state.count + 1
                             });
                             var n = t < 0,
                                 s = 1;
-                            switch (n && (t *= -1, s = -1), e.setState({
+                            switch (n && (type *= -1, s = -1), e.setState({
                                     count: e.state.count + s
                                 }), t) {
                                 case 1:
