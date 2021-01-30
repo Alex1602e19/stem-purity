@@ -73,9 +73,9 @@ var C5 = 0;
                         id: "description"
                     }, s.a.createElement("div", {
                         className: "card card-body shadow-sm"
-                    }, s.a.createElement("p", null, "Click on every item you've done. After submitting the test, a \"Purity Score\" will be calculated. A \"Classic Purity Score\" will be shown for reference, which is . This test differs from the Rice Purity Test in that it looks better and that every question is associated with a weight. This is assuming that not all questions on this test equally impact how pure you are. In other words, using methamphetamine is a little more immoral than holding hands, and this test reflects that. Checking off severe acts will lower your purity quicker than checking off minor acts."), s.a.createElement("p", {
+                    }, s.a.createElement("p", null, "Click on every item you've done. After submitting the test, a \"Purity Score\" will be calculated. A \"Classic Purity Score\" will be shown for reference, which is how much you've completed, unweighted. This test also includes weighted questions, which will be calculated in a weighted score, and different category questions.  Checking off severe offenses will lower your \"purity.\" thus increasing the score, quicker than checking off minor offenses."), s.a.createElement("p", {
                         className: "text-danger font-weight-bold"
-                    }, "This is not a bucket list.", s.a.createElement("br", null), " Completion of all items on this test will likely result in death.")))))
+                    }, "This is not a bucket list.", s.a.createElement("br", null), "Completion of all items on this test will likely result in looking like an idiot savant.")))))
                 }),
                 w = [{
                     content: "Made up your own lab procedure?",
@@ -509,7 +509,7 @@ var C5 = 0;
                                 score: this.state.score
                             }))))), s.a.createElement("footer", null, s.a.createElement("div", {
                                 class: "container text-center font-italic text-muted p-4"
-                            }, "(Mostly) made by senguyen1011; adapted by Thomas C., Thomas#5400 (Discord) https://discord.gg/ks7nkBvg5h")))
+                            }, "(Mostly) made by senguyen1011; adapted by Thomas C., Thomas#5400 (Discord)", s.a.createElement("br", null), "https://discord.gg/ks7nkBvg5h")))
                         }
                     }]), a
                 }(n.Component);
