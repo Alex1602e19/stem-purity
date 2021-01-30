@@ -4,6 +4,11 @@ var t2 = 0;
 var t3 = 0;
 var t4 = 0;
 var t5 = 0;
+var W1 = 0;
+var W2 = 0;
+var W3 = 0;
+var W4 = 0;
+var W5 = 0;
 
 (this["webpackJsonpstate-purity"] = this["webpackJsonpstate-purity"] || []).push([
     [0], {
@@ -27,7 +32,7 @@ var t5 = 0;
                         className: "card-body text-center"
                     }, s.a.createElement("h4", {
                         className: "card-title"
-                    }, "A Weighted \"Rice Purity\" Test, but for STEM!"), s.a.createElement("h5", {
+                    }, "A weighted, \"Rice Purity\" based test, but for STEM!"), s.a.createElement("h5", {
                         className: "card-subtitle mb-2 text-muted"
                     }, "Have you ever..."), s.a.createElement("button", {
                         className: "btn btn-teal badge rounded-pill p-2 shadow-sm",
@@ -116,14 +121,19 @@ var t5 = 0;
                             //Total each subject
                             if (a.type == 1) {
                                 t1 = t1 + 1
+                                W1 = W1 + a.weight
                             } else if (a.type == 2) {
                                 t2 = t2 + 1
+                                W2 = W2 + a.weight
                             } else if (a.type == 3) {
                                 t3 = t3 + 1 
+                                W3 = W3 + a.weight
                             } else if (a.type == 4) {
                                 t4 = t4 + 1 
+                                W4 = W4 + a.weight
                             } else if (a.type == 5) {
                                 t5 = t5 + 1
+                                W5 = W5 + a.weight
                             }
                         }, e
                     }
@@ -224,19 +234,19 @@ var t5 = 0;
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w1), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w1 + '/' t1), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w2), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w2 + '/' t2), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w3), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w3 + '/' t3), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -244,13 +254,13 @@ var t5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w4), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w4 + '/' t4), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w5 + '/' t5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -441,7 +451,7 @@ var t5 = 0;
                                 score: this.state.score
                             }))))), s.a.createElement("footer", null, s.a.createElement("div", {
                                 class: "container text-center font-italic text-muted p-4"
-                            }, "(Mostly) made by senguyen1011 (GH).  Adapted by Thomas C. (Thomas#5400 on Discord).")))
+                            }, "(Mostly) made by senguyen1011 (GH).  Adapted by Thomas C. (Thomas#5400 on Discord).\nhttps://discord.gg/ks7nkBvg5h")))
                         }
                     }]), a
                 }(n.Component);
