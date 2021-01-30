@@ -220,7 +220,7 @@ var C5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h2", null, (w.length - this.props.score / tweight * w.length).toFixed(1)), s.a.createElement("h6", {
+                            }, s.a.createElement("h2", null, ((w.length - this.props.score / tweight * w.length) / w.length * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                                 className: "text-muted mb-0"
                             }, "Weighted Purity Score"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
                                 className: "progress mb-3"
@@ -253,19 +253,19 @@ var C5 = 0;
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w1 + '/' +t1), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w1 + '/' +t1 + '(' + (C1/W1).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w2 + '/' +t2), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w2 + '/' +t2 + '(' + (C2/W2).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w3 + '/' +t3), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w3 + '/' +t3 + '(' + (C3/W3).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -273,13 +273,13 @@ var C5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w4 + '/' +t4), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w4 + '/' +t4 + '(' + (C4/W4).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w5 + '/' +t5), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w5 + '/' +t5 + '(' + (C5/W5).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -352,13 +352,15 @@ var C5 = 0;
                                 score: e.state.score + t,
                                 count: e.state.count + 1
                             });
-                            t = Number(type)
+
+                            t, type = Number(type), t
                             var n = t < 0,
                                 s = 1;
                             switch (n && (t *= -1, s = -1), e.setState({
                                     count: e.state.count + s
                                 }), t) {
                                 case 1:
+                                    C1 = C1 + s * type
                                     e.setState({
                                         w1: e.state.w1 + s
                                     }), n ? e.setState({
@@ -370,6 +372,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 2:
+                                    C2 = C2 + s * type
                                     e.setState({
                                         w2: e.state.w2 + s
                                     }), n ? e.setState({
@@ -381,6 +384,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 3:
+                                    C3 = C3 + s * type
                                     e.setState({
                                         w3: e.state.w3 + s
                                     }), n ? e.setState({
@@ -392,6 +396,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 4:
+                                    C4 = C4 + s * type
                                     e.setState({
                                         w4: e.state.w4 + s
                                     }), n ? e.setState({
@@ -403,6 +408,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 5:
+                                    C5 = C5 + s * type
                                     e.setState({
                                         w5: e.state.w5 + s
                                     }), n ? e.setState({
@@ -470,7 +476,7 @@ var C5 = 0;
                                 score: this.state.score
                             }))))), s.a.createElement("footer", null, s.a.createElement("div", {
                                 class: "container text-center font-italic text-muted p-4"
-                            }, "(Mostly) made by senguyen1011 (GH).  Adapted by Thomas C. (Thomas#5400 on Discord).\nhttps://discord.gg/ks7nkBvg5h")))
+                            }, "(Mostly) made by senguyen1011; adapted by Thomas C., Thomas#5400 (Discord) https://discord.gg/ks7nkBvg5h")))
                         }
                     }]), a
                 }(n.Component);
