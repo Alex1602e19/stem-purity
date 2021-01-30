@@ -53,6 +53,19 @@ var t5 = 0;
                         className: "text-danger font-weight-bold"
                     }, "This is not a bucket list.", s.a.createElement("br", null), " Completion of all items on this test will likely result in death.")))))
                 }),
+                w = [{
+                    content: "Approximated pi as 3?",
+                    weight: 1,
+                    type: 1
+                }, {
+                    content: "Forgotten \"+C\"?",
+                    weight: 1,
+                    type: 1
+                }, {
+                    content: "Testing?",
+                    weight: 1,
+                    type: 1
+                }],
                 u = function(e) {
                     return s.a.createElement("header", {
                         className: "fixed-top"
@@ -76,7 +89,7 @@ var t5 = 0;
                         className: "text-muted"
                     }, "Questions Answered")), s.a.createElement("div", {
                         className: "col"
-                    }, s.a.createElement("h5", null, 100 - e.count), s.a.createElement("h6", {
+                    }, s.a.createElement("h5", null, w.length - e.count), s.a.createElement("h6", {
                         className: "text-muted"
                     }, "Classic Purity")), s.a.createElement("div", {
                         className: "col"
@@ -84,19 +97,6 @@ var t5 = 0;
                         className: "text-muted"
                     }, "Cumulative Score"))))))))
                 },
-                w = [{
-                    content: "Approximated pi as 3?",
-                    weight: 1,
-                    type: 1
-                }, {
-                    content: "Forgotten \"+C\"?",
-                    weight: 1,
-                    type: 1
-                }, {
-                    content: "Testing?",
-                    weight: 1,
-                    type: 1
-                }],
                 g = function(e) {
                     Object(m.a)(a, e);
                     var t = Object(h.a)(a);
