@@ -78,18 +78,50 @@ var C5 = 0;
                     }, "This is not a bucket list.", s.a.createElement("br", null), " Completion of all items on this test will likely result in death.")))))
                 }),
                 w = [{
-                    content: "Approximated pi as 3?",
+                    content: "Made up your own lab procedure?",
                     weight: 1,
-                    type: 4
+                    type: 1
                 }, {
-                    content: "Forgotten \"+C\"?",
+                    content: "Bullshitted lab data?",
+                    weight: 2,
+                    type: 1
+                },{
+                    content: "Murmured \“What the fuck...\” while reading code?",
+                    weight: 1,
+                    type: 2
+                },{
+                    content: "Considered giving up and becoming a CS major (Or are/plan to be)?",
+                    weight: 4,
+                    type: 2
+                },{
+                    content: "Soldered incorrectly and destroyed the circuit?",
+                    weight: 1,
+                    type: 3
+                },{
+                    content: "Used red wires for negative and black wires for positive?",
+                    weight: 3,
+                    type: 3
+                },{
+                    content: "Proved something true through Desmos/Wolfram Alpha/etc?",
                     weight: 2,
                     type: 4
-                }, {
-                    content: "Testing?",
+                },{
+                    content: "Used L'Hôpital's rule to prove differentiability of an expression?",
+                    weight: 2,
+                    type: 4
+                },{
+                    content: "Said/Decided that political science isn't a real science? (it isn't)",
                     weight: 1,
                     type: 5
-                }]
+                },{
+                    content: "Used STEM-pun pickup lines?",
+                    weight: 2,
+                    type: 5
+                },{
+                    content: "Referenced XKCD?",
+                    weight: 2,
+                    type: 5
+                },]
                 var tweight = 0
                 for (i = 0; i < w.length; i++) {
                     tweight = tweight + w[i].weight
@@ -253,19 +285,19 @@ var C5 = 0;
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w1 + '/' +t1 + '(' + (C1/W1).toFixed(1) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w1 + '/' +t1 + '(' + (C1/W1*100).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w2 + '/' +t2 + '(' + (C2/W2).toFixed(1) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w2 + '/' +t2 + '(' + (C2/W2*100).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w3 + '/' +t3 + '(' + (C3/W3).toFixed(1) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w3 + '/' +t3 + '(' + (C3/W3*100).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -273,13 +305,13 @@ var C5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w4 + '/' +t4 + '(' + (C4/W4).toFixed(1) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w4 + '/' +t4 + '(' + (C4/W4*100).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w5 + '/' +t5 + '(' + (C5/W5).toFixed(1) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w5 + '/' +t5 + '(' + (C5/W5*100).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
