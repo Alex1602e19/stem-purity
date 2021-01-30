@@ -509,7 +509,7 @@ var C5 = 0;
                                 score: this.state.score
                             }))))), s.a.createElement("footer", null, s.a.createElement("div", {
                                 class: "container text-center font-italic text-muted p-4"
-                            }, "(Mostly) made by senguyen1011.", s.a.createElement("br", null), "Adapted by Thomas C.   Thomas#5400 (Discord)", s.a.createElement("br", null), "https://discord.gg/ks7nkBvg5h")))
+                            }, "(Mostly) made by senguyen1011.", s.a.createElement("br", null), "Adapted by Thomas. Discord: Thomas#5400", s.a.createElement("br", null), s.a.createElement("a", {href: "https://discord.gg/ks7nkBvg5h"}, "Join our STEM Discord"))))
                         }
                     }]), a
                 }(n.Component);
