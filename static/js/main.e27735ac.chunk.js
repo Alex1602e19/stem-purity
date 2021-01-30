@@ -473,15 +473,15 @@
                 }, {
                     content: "Committed an act of incest?",
                     weight: 10,
-                    type: 1
+                    type: 2
                 }, {
                     content: "Committed an act of incest?",
                     weight: 1,
-                    type: 1
+                    type: 2
                 }, {
                     content: "Testing?",
                     weight: 10,
-                    type: 1
+                    type: 2
                 }],
                 g = function(e) {
                     Object(m.a)(a, e);
@@ -493,7 +493,7 @@
                         for (var n = arguments.length, s = new Array(n), i = 0; i < n; i++) s[i] = arguments[i];
                         return (e = t.call.apply(t, [this].concat(s))).handleCheck = function(t, a) {
                             var n = a.content;
-                            n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.weight, n) : e.props.onCheck(-1 * a.weight, n)
+                            n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.type, n) : e.props.onCheck(-1 * a.type, n)
                         }, e
                     }
                     return Object(l.a)(a, [{
@@ -545,12 +545,12 @@
                         key: "render",
                         value: function() {
                             var e = this,
-                                t = this.props.w1 + this.props.w2 + this.props.w3 + this.props.w4 + this.props.w50,
+                                t = this.props.w1 + this.props.w2 + this.props.w3 + this.props.w4 + this.props.w5,
                                 a = this.props.w1 / t * 100,
                                 i = this.props.w2 / t * 100,
                                 o = this.props.w3 / t * 100,
                                 c = this.props.w4 / t * 100,
-                                r = this.props.w50 / t * 100;
+                                r = this.props.w5 / t * 100;
                             return s.a.createElement("div", {
                                 className: "card shadow-sm result"
                             }, s.a.createElement("div", {
@@ -612,13 +612,13 @@
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w4), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, 99), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w50), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
