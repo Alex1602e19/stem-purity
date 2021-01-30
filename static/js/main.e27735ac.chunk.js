@@ -1,4 +1,16 @@
 
+
+
+
+
+//Please don't read this code I'm personally ashamed of it.
+//Most of this was created using the (I believe) React Transpiler after senguyen1011 wrote the original source.
+//I, foolishly, editted the *transpiled* code, not only using a basically non-existent environment, but also without an efficient build/workflow setup.
+//I.e. I "built" and tested the website using Github pages.  Meaning I literally comitted code PRIOR to testing it.
+//Don't do this shit unless it's meant to be a bodge job like I did.
+//And if you ever write a transpiler, please put some information about it before/after the code so others can realize this isn't just obfuscated source code like the dumbass I was.  
+
+
 var t1 = 0;
 var t2 = 0;
 var t3 = 0;
@@ -9,6 +21,12 @@ var W2 = 0;
 var W3 = 0;
 var W4 = 0;
 var W5 = 0;
+var C1 = 0;
+var C2 = 0;
+var C3 = 0;
+var C4 = 0;
+var C5 = 0;
+//Told you this was a bodge job.
 
 (this["webpackJsonpstate-purity"] = this["webpackJsonpstate-purity"] || []).push([
     [0], {
@@ -234,19 +252,19 @@ var W5 = 0;
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w1 + '/' t1), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w1 + '/' +t1), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w2 + '/' t2), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w2 + '/' +t2), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w3 + '/' t3), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w3 + '/' +t3), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -254,13 +272,13 @@ var W5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w4 + '/' t4), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w4 + '/' +t4), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w5 + '/' t5), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w5 + '/' +t5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
