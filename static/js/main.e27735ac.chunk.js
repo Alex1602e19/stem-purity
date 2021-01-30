@@ -111,7 +111,7 @@ var t5 = 0;
                         for (var n = arguments.length, s = new Array(n), i = 0; i < n; i++) s[i] = arguments[i];
                         return (e = t.call.apply(t, [this].concat(s))).handleCheck = function(t, a) {
                             var n = a.content;
-                            n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.weight, n, a.type) : e.props.onCheck(-1 * a.weight, n, a.type)
+                            n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.weight, n, a.type) : e.props.onCheck(-1 * a.weight, n, -1 * a.type)
                             //Total each subject
                             if (type == 1) {
                                 t1 = t1 + 1
@@ -322,7 +322,7 @@ var t5 = 0;
                                 score: e.state.score + t,
                                 count: e.state.count + 1
                             });
-                            var n = t < 0,
+                            var n = type < 0,
                                 s = 1;
                             switch (n && (type *= -1, s = -1), e.setState({
                                     count: e.state.count + s
