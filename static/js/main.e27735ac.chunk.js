@@ -56,15 +56,15 @@ var t5 = 0;
                 w = [{
                     content: "Approximated pi as 3?",
                     weight: 1,
-                    type: 4
+                    type: 1
                 }, {
                     content: "Forgotten \"+C\"?",
                     weight: 1,
-                    type: 4
+                    type: 1
                 }, {
                     content: "Testing?",
                     weight: 1,
-                    type: 5
+                    type: 1
                 }],
                 u = function(e) {
                     return s.a.createElement("header", {
@@ -177,7 +177,7 @@ var t5 = 0;
                                 o = this.props.w3 / t * 100,
                                 c = this.props.w4 / t * 100,
                                 r = this.props.w5 / t * 100;
-                            console.log("testtesttestestestest", this.props.w1)
+                            console.log("testtesttestestestest", this.props.w1 + -50)
                             return s.a.createElement("div", {
                                 className: "card shadow-sm result"
                             }, s.a.createElement("div", {
