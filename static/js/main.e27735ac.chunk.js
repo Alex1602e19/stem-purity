@@ -319,15 +319,15 @@ var t5 = 0;
                     function a() {
                         var e;
                         return Object(r.a)(this, a), (e = t.call(this)).updateScore = function(t, a, type) { 
+                            var s = type / Math.abs(type);
                             t = Number(t), e.setState({
                                 score: e.state.score + t,
-                                count: e.state.count + 1
+                                count: e.state.count + s
                             });
-                            var n = type < 0,
-                                s = type / Math.abs(type);
+                            console.log("testestestestestest", t, a, type, s)
                             e.setState({
                                 ['w' + type]: e.state['w' + type] + s
-                            }), n ? e.setState({
+                            }), (s < 0) ? e.setState({
                                 ['a' + type]: e.state['a' + type].filter((function(e) {
                                     return e !== a
                                 }))
