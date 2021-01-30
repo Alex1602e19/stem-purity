@@ -323,66 +323,17 @@ var t5 = 0;
                                 count: e.state.count + 1
                             });
                             var n = type < 0,
-                                s = 1;
-                            switch (n && (type *= -1, s = -1), e.setState({
-                                    count: e.state.count + s
-                                }), t) {
-                                case 1:
-                                    e.setState({
-                                        w1: e.state.w1 + s
-                                    }), n ? e.setState({
-                                        a1: e.state.a1.filter((function(e) {
-                                            return e !== a
-                                        }))
-                                    }) : e.setState({
-                                        a1: [].concat(Object(c.a)(e.state.a1), [a])
-                                    });
-                                    break;
-                                case 2:
-                                    e.setState({
-                                        w2: e.state.w2 + s
-                                    }), n ? e.setState({
-                                        a2: e.state.a2.filter((function(e) {
-                                            return e !== a
-                                        }))
-                                    }) : e.setState({
-                                        a2: [].concat(Object(c.a)(e.state.a2), [a])
-                                    });
-                                    break;
-                                case 3:
-                                    e.setState({
-                                        w3: e.state.w3 + s
-                                    }), n ? e.setState({
-                                        a3: e.state.a3.filter((function(e) {
-                                            return e !== a
-                                        }))
-                                    }) : e.setState({
-                                        a3: [].concat(Object(c.a)(e.state.a3), [a])
-                                    });
-                                    break;
-                                case 4:
-                                    e.setState({
-                                        w4: e.state.w4 + s
-                                    }), n ? e.setState({
-                                        a4: e.state.a4.filter((function(e) {
-                                            return e !== a
-                                        }))
-                                    }) : e.setState({
-                                        a4: [].concat(Object(c.a)(e.state.a4), [a])
-                                    });
-                                    break;
-                                case 5:
-                                    e.setState({
-                                        w5: e.state.w5 + s
-                                    }), n ? e.setState({
-                                        a5: e.state.a5.filter((function(e) {
-                                            return e !== a
-                                        }))
-                                    }) : e.setState({
-                                        a5: [].concat(Object(c.a)(e.state.a5), [a])
-                                    })
-                            }
-                        }, e.state = {
+                                s = type / Math.abs(type);
+                            e.setState({
+                                w['w' + type]: e.state['w' + type] + s
+                            }), n ? e.setState({
+                                ['a' + type]: e.state['a' + type].filter((function(e) {
+                                    return e !== a
+                                }))
+                            }) : e.setState({
+                                ['a' + type]: [].concat(Object(c.a)(e.state['a' + type]), [a])
+                            });
+                        }}, e.state = {
                             isComplete: !1,
                             score: 0,
                             count: 0,
