@@ -323,6 +323,7 @@ var t5 = 0;
                                 score: e.state.score + t,
                                 count: e.state.count + 1
                             });
+                            t = Number(type)
                             var n = t < 0,
                                 s = 1;
                             switch (n && (t *= -1, s = -1), e.setState({
