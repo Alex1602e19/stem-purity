@@ -328,7 +328,7 @@ var t5 = 0;
                                 ['w' + type]: e.state['w' + type] + s
                             }), (s < 0) ? e.setState({
                                 ['a' + type]: e.state['a' + type].filter((function(e) {
-                                    console.log("Boop", e, "bop" a)
+                                    console.log("Boop", e, "bop", a)
                                     return e != a
                                 }))
                             }) : e.setState({
