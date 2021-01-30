@@ -66,6 +66,10 @@ var t5 = 0;
                     weight: 1,
                     type: 1
                 }],
+                var tweight = 0
+                for (i = 0; i < w.length; i++) {
+                    tweight = tweight + w[i].weight
+                }
                 u = function(e) {
                     return s.a.createElement("header", {
                         className: "fixed-top"
@@ -186,7 +190,7 @@ var t5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h2", null, (w.length - this.props.score / 270 * w.length).toFixed(1)), s.a.createElement("h6", {
+                            }, s.a.createElement("h2", null, (w.length - this.props.score / tweight * w.length).toFixed(1)), s.a.createElement("h6", {
                                 className: "text-muted mb-0"
                             }, "Weighted Purity Score"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
                                 className: "progress mb-3"
@@ -435,7 +439,7 @@ var t5 = 0;
                                 score: this.state.score
                             }))))), s.a.createElement("footer", null, s.a.createElement("div", {
                                 class: "container text-center font-italic text-muted p-4"
-                            }, "Spartans Will")))
+                            }, "(Mostly) made by senguyen1011 (GH).  Adapted by Thomas C. (Thomas#5400 on Discord).")))
                         }
                     }]), a
                 }(n.Component);
