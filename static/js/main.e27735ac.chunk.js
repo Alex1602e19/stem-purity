@@ -1,3 +1,9 @@
+var t1 = 0;
+var t2 = 0;
+var t3 = 0;
+var t4 = 0;
+var t5 = 0;
+
 (this["webpackJsonpstate-purity"] = this["webpackJsonpstate-purity"] || []).push([
     [0], {
         13: function(e, t, a) {},
@@ -102,6 +108,18 @@
                         return (e = t.call.apply(t, [this].concat(s))).handleCheck = function(t, a) {
                             var n = a.content;
                             n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.type, n) : e.props.onCheck(-1 * a.type, n)
+                            //Total each subject
+                            if (type == 1) {
+                                t1 = t1 + 1
+                            } else if (type == 2) {
+                                t2 = t2 + 1
+                            } else if (type == 3) {
+                                t3 = t3 + 1 
+                            } else if (type == 4) {
+                                t4 = t4 + 1 
+                            } else if (type == 5) {
+                                t5 = t5 + 1
+                            }
                         }, e
                     }
                     return Object(l.a)(a, [{
@@ -200,19 +218,19 @@
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w1), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, obj.toString(this.props.w1) + '/' + obj.toString(t1)), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w2), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, obj.toString(this.props.w2) + '/' + obj.toString(t2)), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w3), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, obj.toString(this.props.w3) + '/' + obj.toString(t3)), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -220,13 +238,13 @@
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, 99), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, obj.toString(this.props.w4) + '/' + obj.toString(t4)), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, obj.toString(this.props.w5) + '/' + obj.toString(t5)), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
