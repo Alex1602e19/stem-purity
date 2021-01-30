@@ -169,11 +169,11 @@ var C5 = 0;
                         className: "col"
                     }, s.a.createElement("h5", null, (e.count / w.length * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                         className: "text-muted"
-                    }, "Classic Purity")), s.a.createElement("div", {
+                    }, "Classic Completion")), s.a.createElement("div", {
                         className: "col"
                     }, s.a.createElement("h5", null, e.score + '/' + tweight), s.a.createElement("h6", {
                         className: "text-muted"
-                    }, "Cumulative Score"))))))))
+                    }, "Total Weighted Score"))))))))
                 },
                 g = function(e) {
                     Object(m.a)(a, e);
@@ -254,7 +254,7 @@ var C5 = 0;
                                 className: "col"
                             }, s.a.createElement("h2", null, (this.props.score / tweight * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                                 className: "text-muted mb-0"
-                            }, "Total Weighted Score"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
+                            }, "Total Weighted Completion"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
                                 className: "progress mb-3"
                             }, s.a.createElement("div", {
                                 className: "progress-bar bg-info",
@@ -509,7 +509,7 @@ var C5 = 0;
                                 score: this.state.score
                             }))))), s.a.createElement("footer", null, s.a.createElement("div", {
                                 class: "container text-center font-italic text-muted p-4"
-                            }, "(Mostly) made by senguyen1011; adapted by Thomas C., Thomas#5400 (Discord)", s.a.createElement("br", null), "https://discord.gg/ks7nkBvg5h")))
+                            }, "(Mostly) made by senguyen1011.", s.a.createElement("br", null), "Adapted by Thomas C.   Thomas#5400 (Discord)", s.a.createElement("br", null), "https://discord.gg/ks7nkBvg5h")))
                         }
                     }]), a
                 }(n.Component);
