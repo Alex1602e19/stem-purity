@@ -93,6 +93,24 @@ var C5 = 0;
                 var tweight = 0
                 for (i = 0; i < w.length; i++) {
                     tweight = tweight + w[i].weight
+                    a = w[i]
+                    //Total each subject
+                            if (a.type == 1) {
+                                t1 = t1 + 1
+                                W1 = W1 + a.weight
+                            } else if (a.type == 2) {
+                                t2 = t2 + 1
+                                W2 = W2 + a.weight
+                            } else if (a.type == 3) {
+                                t3 = t3 + 1 
+                                W3 = W3 + a.weight
+                            } else if (a.type == 4) {
+                                t4 = t4 + 1 
+                                W4 = W4 + a.weight
+                            } else if (a.type == 5) {
+                                t5 = t5 + 1
+                                W5 = W5 + a.weight
+                            }
                 }
             var u = function(e) {
                     return s.a.createElement("header", {
@@ -136,23 +154,6 @@ var C5 = 0;
                         return (e = t.call.apply(t, [this].concat(s))).handleCheck = function(t, a) {
                             var n = a.content;
                             n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.weight, n, a.type) : e.props.onCheck(-1 * a.weight, n, -1 * a.type)
-                            //Total each subject
-                            if (a.type == 1) {
-                                t1 = t1 + 1
-                                W1 = W1 + a.weight
-                            } else if (a.type == 2) {
-                                t2 = t2 + 1
-                                W2 = W2 + a.weight
-                            } else if (a.type == 3) {
-                                t3 = t3 + 1 
-                                W3 = W3 + a.weight
-                            } else if (a.type == 4) {
-                                t4 = t4 + 1 
-                                W4 = W4 + a.weight
-                            } else if (a.type == 5) {
-                                t5 = t5 + 1
-                                W5 = W5 + a.weight
-                            }
                         }, e
                     }
                     return Object(l.a)(a, [{
