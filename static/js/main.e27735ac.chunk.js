@@ -493,19 +493,19 @@
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w1), s.a.createElement("h6", {
                                 className: "text-info mb-0"
-                            }, "Minor Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Science Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w2), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
-                            }, "Immoral Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Technology Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w3), s.a.createElement("h6", {
                                 className: "text-success mb-0"
-                            }, "Raunchy Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Engineering Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, o.toFixed(1), "%"))), s.a.createElement("div", {
                                 className: "row text-center"
@@ -513,13 +513,13 @@
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w4), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
-                            }, "Scandalous Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Mathematic Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
                             }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
-                            }, "Dangerous Acts"), t > 0 && s.a.createElement("small", {
+                            }, "Other Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, r.toFixed(1), "%"))), t > 0 && s.a.createElement(n.Fragment, null, s.a.createElement("hr", null), s.a.createElement("ul", {
                                 className: "nav nav-pills nav-fill mb-3"
@@ -533,7 +533,7 @@
                                         selectedList: e.props.a1
                                     })
                                 }
-                            }, "Minor")), s.a.createElement("li", {
+                            }, "Science")), s.a.createElement("li", {
                                 className: "nav-item"
                             }, s.a.createElement("btn", {
                                 className: 2 === this.state.selectedNav ? "nav-link active bg-primary" : "nav-link text-teal",
@@ -543,7 +543,7 @@
                                         selectedList: e.props.a2
                                     })
                                 }
-                            }, "Immoral")), s.a.createElement("li", {
+                            }, "Technology")), s.a.createElement("li", {
                                 className: "nav-item"
                             }, s.a.createElement("btn", {
                                 className: 3 === this.state.selectedNav ? "nav-link active bg-success" : "nav-link text-teal",
@@ -553,7 +553,7 @@
                                         selectedList: e.props.a3
                                     })
                                 }
-                            }, "Raunchy")), s.a.createElement("li", {
+                            }, "Engineering")), s.a.createElement("li", {
                                 className: "nav-item"
                             }, s.a.createElement("btn", {
                                 className: 4 === this.state.selectedNav ? "nav-link active bg-warning" : "nav-link text-teal",
@@ -563,7 +563,7 @@
                                         selectedList: e.props.a4
                                     })
                                 }
-                            }, "Scandalous")), s.a.createElement("li", {
+                            }, "Mathematics")), s.a.createElement("li", {
                                 className: "nav-item"
                             }, s.a.createElement("btn", {
                                 className: 5 === this.state.selectedNav ? "nav-link active bg-danger" : "nav-link text-teal",
@@ -573,7 +573,7 @@
                                         selectedList: e.props.a5
                                     })
                                 }
-                            }, "Unspeakable"))), s.a.createElement(p, {
+                            }, "Other"))), s.a.createElement(p, {
                                 acts: this.state.selectedList
                             }))))
                         }
