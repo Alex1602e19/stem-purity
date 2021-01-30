@@ -177,6 +177,7 @@ var t5 = 0;
                                 o = this.props.w3 / t * 100,
                                 c = this.props.w4 / t * 100,
                                 r = this.props.w5 / t * 100;
+                            console.log(this.props.w1)
                             return s.a.createElement("div", {
                                 className: "card shadow-sm result"
                             }, s.a.createElement("div", {
@@ -218,19 +219,19 @@ var t5 = 0;
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, obj.toString(this.props.w1) + '/' + obj.toString(t1)), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w1), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, a.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, obj.toString(this.props.w2) + '/' + obj.toString(t2)), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w2), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, i.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, obj.toString(this.props.w3) + '/' + obj.toString(t3)), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w3), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
@@ -238,13 +239,13 @@ var t5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, obj.toString(this.props.w4) + '/' + obj.toString(t4)), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w4), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
                             }, c.toFixed(1), "%")), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, obj.toString(this.props.w5) + '/' + obj.toString(t5)), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, this.props.w5), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Acts"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
