@@ -114,15 +114,15 @@ var t5 = 0;
                             var n = a.content;
                             n = "?" === n ? "Sex number lol" : n.slice(0, -1), t.target.checked ? e.props.onCheck(a.weight, n, a.type) : e.props.onCheck(-1 * a.weight, n, -1 * a.type)
                             //Total each subject
-                            if (type == 1) {
+                            if (a.type == 1) {
                                 t1 = t1 + 1
-                            } else if (type == 2) {
+                            } else if (a.type == 2) {
                                 t2 = t2 + 1
-                            } else if (type == 3) {
+                            } else if (a.type == 3) {
                                 t3 = t3 + 1 
-                            } else if (type == 4) {
+                            } else if (a.type == 4) {
                                 t4 = t4 + 1 
-                            } else if (type == 5) {
+                            } else if (a.type == 5) {
                                 t5 = t5 + 1
                             }
                         }, e
@@ -318,22 +318,71 @@ var t5 = 0;
 
                     function a() {
                         var e;
-                        return Object(r.a)(this, a), (e = t.call(this)).updateScore = function(t, a, type) { 
-                            var s = type / Math.abs(type);
+                        return Object(r.a)(this, a), (e = t.call(this)).updateScore = function(t, a, type) {
                             t = Number(t), e.setState({
                                 score: e.state.score + t,
-                                count: e.state.count + s
+                                count: e.state.count + 1
                             });
-                            e.setState({
-                                ['w' + type]: e.state['w' + type] + s
-                            }), (s < 0) ? e.setState({
-                                ['a' + type]: e.state['a' + type].filter((function(e) {
-                                    console.log("Boop", e, "bop", a)
-                                    return e != a
-                                }))
-                            }) : e.setState({
-                                ['a' + type]: [].concat(Object(c.a)(e.state['a' + type]), [a])
-                            });
+                            var n = t < 0,
+                                s = 1;
+                            switch (n && (t *= -1, s = -1), e.setState({
+                                    count: e.state.count + s
+                                }), t) {
+                                case 1:
+                                    e.setState({
+                                        w1: e.state.w1 + s
+                                    }), n ? e.setState({
+                                        a1: e.state.a1.filter((function(e) {
+                                            return e !== a
+                                        }))
+                                    }) : e.setState({
+                                        a1: [].concat(Object(c.a)(e.state.a1), [a])
+                                    });
+                                    break;
+                                case 2:
+                                    e.setState({
+                                        w2: e.state.w2 + s
+                                    }), n ? e.setState({
+                                        a2: e.state.a2.filter((function(e) {
+                                            return e !== a
+                                        }))
+                                    }) : e.setState({
+                                        a2: [].concat(Object(c.a)(e.state.a2), [a])
+                                    });
+                                    break;
+                                case 3:
+                                    e.setState({
+                                        w3: e.state.w3 + s
+                                    }), n ? e.setState({
+                                        a3: e.state.a3.filter((function(e) {
+                                            return e !== a
+                                        }))
+                                    }) : e.setState({
+                                        a3: [].concat(Object(c.a)(e.state.a3), [a])
+                                    });
+                                    break;
+                                case 4:
+                                    e.setState({
+                                        w4: e.state.w4 + s
+                                    }), n ? e.setState({
+                                        a4: e.state.a4.filter((function(e) {
+                                            return e !== a
+                                        }))
+                                    }) : e.setState({
+                                        a4: [].concat(Object(c.a)(e.state.a4), [a])
+                                    });
+                                    break;
+                                case 5:
+                                    e.setState({
+                                        w5: e.state.w5 + s
+                                    }), n ? e.setState({
+                                        a5: e.state.a5.filter((function(e) {
+                                            return e !== a
+                                        }))
+                                    }) : e.setState({
+                                        a5: [].concat(Object(c.a)(e.state.a5), [a])
+                                    })
+                            }
                         }, e.state = {
                             isComplete: !1,
                             score: 0,
