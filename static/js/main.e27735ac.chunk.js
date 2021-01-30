@@ -324,12 +324,12 @@ var t5 = 0;
                                 score: e.state.score + t,
                                 count: e.state.count + s
                             });
-                            console.log("testestestestestest", t, a, type, s)
                             e.setState({
                                 ['w' + type]: e.state['w' + type] + s
                             }), (s < 0) ? e.setState({
                                 ['a' + type]: e.state['a' + type].filter((function(e) {
-                                    return e !== a
+                                    console.log("Boop", e, "bop" a)
+                                    return e != a
                                 }))
                             }) : e.setState({
                                 ['a' + type]: [].concat(Object(c.a)(e.state['a' + type]), [a])
