@@ -352,15 +352,15 @@ var C5 = 0;
                                 score: e.state.score + t,
                                 count: e.state.count + 1
                             });
-
-                            t, type = Number(type), t
+                            var l = t
+                            t = Number(type)
                             var n = t < 0,
                                 s = 1;
                             switch (n && (t *= -1, s = -1), e.setState({
                                     count: e.state.count + s
                                 }), t) {
                                 case 1:
-                                    C1 = C1 + s * type
+                                    C1 = C1 + s * l
                                     e.setState({
                                         w1: e.state.w1 + s
                                     }), n ? e.setState({
@@ -372,7 +372,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 2:
-                                    C2 = C2 + s * type
+                                    C2 = C2 + s * l
                                     e.setState({
                                         w2: e.state.w2 + s
                                     }), n ? e.setState({
@@ -384,7 +384,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 3:
-                                    C3 = C3 + s * type
+                                    C3 = C3 + s * l
                                     e.setState({
                                         w3: e.state.w3 + s
                                     }), n ? e.setState({
@@ -396,7 +396,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 4:
-                                    C4 = C4 + s * type
+                                    C4 = C4 + s * l
                                     e.setState({
                                         w4: e.state.w4 + s
                                     }), n ? e.setState({
@@ -408,7 +408,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 5:
-                                    C5 = C5 + s * type
+                                    C5 = C5 + s * l
                                     e.setState({
                                         w5: e.state.w5 + s
                                     }), n ? e.setState({
