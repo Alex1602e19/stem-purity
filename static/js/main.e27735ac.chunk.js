@@ -177,7 +177,7 @@ var t5 = 0;
                                 o = this.props.w3 / t * 100,
                                 c = this.props.w4 / t * 100,
                                 r = this.props.w5 / t * 100;
-                            console.log(this.props.w1)
+                            console.log("testtesttestestestest", this.props.w1)
                             return s.a.createElement("div", {
                                 className: "card shadow-sm result"
                             }, s.a.createElement("div", {
@@ -186,7 +186,7 @@ var t5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h2", null, (100 - this.props.score / 270 * 100).toFixed(1)), s.a.createElement("h6", {
+                            }, s.a.createElement("h2", null, (w.length - this.props.score / 270 * w.length).toFixed(1)), s.a.createElement("h6", {
                                 className: "text-muted mb-0"
                             }, "Weighted Purity Score"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
                                 className: "progress mb-3"
