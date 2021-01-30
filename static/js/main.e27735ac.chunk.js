@@ -181,6 +181,7 @@ var t5 = 0;
                                 o = this.props.w3 / t * 100,
                                 c = this.props.w4 / t * 100,
                                 r = this.props.w5 / t * 100;
+                            console.log("Test:", w.length, this.props.score, tweight, w.length - this.props.score / tweight * w.length)
                             return s.a.createElement("div", {
                                 className: "card shadow-sm result"
                             }, s.a.createElement("div", {
