@@ -56,15 +56,15 @@ var t5 = 0;
                 w = [{
                     content: "Approximated pi as 3?",
                     weight: 1,
-                    type: 1
+                    type: 4
                 }, {
                     content: "Forgotten \"+C\"?",
-                    weight: 1,
-                    type: 1
+                    weight: 2,
+                    type: 4
                 }, {
                     content: "Testing?",
                     weight: 1,
-                    type: 1
+                    type: 5
                 }]
                 var tweight = 0
                 for (i = 0; i < w.length; i++) {
