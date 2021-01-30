@@ -1,3 +1,4 @@
+
 var t1 = 0;
 var t2 = 0;
 var t3 = 0;
@@ -333,7 +334,7 @@ var t5 = 0;
                             }) : e.setState({
                                 ['a' + type]: [].concat(Object(c.a)(e.state['a' + type]), [a])
                             });
-                        }}, e.state = {
+                        }, e.state = {
                             isComplete: !1,
                             score: 0,
                             count: 0,
@@ -409,4 +410,3 @@ var t5 = 0;
         [8, 1, 2]
     ]
 ]);
-//# sourceMappingURL=main.e27735ac.chunk.js.map
