@@ -325,7 +325,7 @@ var t5 = 0;
                             var n = type < 0,
                                 s = type / Math.abs(type);
                             e.setState({
-                                w['w' + type]: e.state['w' + type] + s
+                                ['w' + type]: e.state['w' + type] + s
                             }), n ? e.setState({
                                 ['a' + type]: e.state['a' + type].filter((function(e) {
                                     return e !== a
