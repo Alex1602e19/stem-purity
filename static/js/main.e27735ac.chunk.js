@@ -73,7 +73,7 @@ var C5 = 0;
                         id: "description"
                     }, s.a.createElement("div", {
                         className: "card card-body shadow-sm"
-                    }, s.a.createElement("p", null, "Click on every item you've done. After submitting the test, a Purity Score will be calculated. The Classic Purity Score will be shown for reference. This test differs from the Rice Purity Test in that it looks better and that every question is associated with a weight. This is assuming that not all questions on this test equally impact how pure you are. In other words, using methamphetamine is a little more immoral than holding hands, and this test reflects that. Checking off severe acts will lower your purity quicker than checking off minor acts."), s.a.createElement("p", {
+                    }, s.a.createElement("p", null, "Click on every item you've done. After submitting the test, a \"Purity Score\" will be calculated. A \"Classic Purity Score\" will be shown for reference, which is . This test differs from the Rice Purity Test in that it looks better and that every question is associated with a weight. This is assuming that not all questions on this test equally impact how pure you are. In other words, using methamphetamine is a little more immoral than holding hands, and this test reflects that. Checking off severe acts will lower your purity quicker than checking off minor acts."), s.a.createElement("p", {
                         className: "text-danger font-weight-bold"
                     }, "This is not a bucket list.", s.a.createElement("br", null), " Completion of all items on this test will likely result in death.")))))
                 }),
@@ -163,15 +163,15 @@ var C5 = 0;
                         className: "row"
                     }, s.a.createElement("div", {
                         className: "col"
-                    }, s.a.createElement("h5", null, e.count), s.a.createElement("h6", {
+                    }, s.a.createElement("h5", null, e.count + '/' + w.length), s.a.createElement("h6", {
                         className: "text-muted"
                     }, "Questions Answered")), s.a.createElement("div", {
                         className: "col"
-                    }, s.a.createElement("h5", null, w.length - e.count), s.a.createElement("h6", {
+                    }, s.a.createElement("h5", null, (e.count / w.length * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                         className: "text-muted"
                     }, "Classic Purity")), s.a.createElement("div", {
                         className: "col"
-                    }, s.a.createElement("h5", null, e.score), s.a.createElement("h6", {
+                    }, s.a.createElement("h5", null, e.score + '/' + tweight), s.a.createElement("h6", {
                         className: "text-muted"
                     }, "Cumulative Score"))))))))
                 },
@@ -252,9 +252,9 @@ var C5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h2", null, ((w.length - this.props.score / tweight * w.length) / w.length * 100).toFixed(1) + '%'), s.a.createElement("h6", {
+                            }, s.a.createElement("h2", null, (this.props.score / tweight * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                                 className: "text-muted mb-0"
-                            }, "Weighted Purity Score"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
+                            }, "Total Weighted Score"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
                                 className: "progress mb-3"
                             }, s.a.createElement("div", {
                                 className: "progress-bar bg-info",
