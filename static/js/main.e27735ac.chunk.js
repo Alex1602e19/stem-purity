@@ -360,7 +360,7 @@ var C5 = 0;
                                     count: e.state.count + s
                                 }), t) {
                                 case 1:
-                                    C1 = C1 + s * l
+                                    C1 = C1 + s * Math.abs(l)
                                     e.setState({
                                         w1: e.state.w1 + s
                                     }), n ? e.setState({
@@ -372,7 +372,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 2:
-                                    C2 = C2 + s * l
+                                    C2 = C2 + s * Math.abs(l)
                                     e.setState({
                                         w2: e.state.w2 + s
                                     }), n ? e.setState({
@@ -384,7 +384,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 3:
-                                    C3 = C3 + s * l
+                                    C3 = C3 + s * Math.abs(l)
                                     e.setState({
                                         w3: e.state.w3 + s
                                     }), n ? e.setState({
@@ -396,7 +396,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 4:
-                                    C4 = C4 + s * l
+                                    C4 = C4 + s * Math.abs(l)
                                     e.setState({
                                         w4: e.state.w4 + s
                                     }), n ? e.setState({
@@ -408,7 +408,7 @@ var C5 = 0;
                                     });
                                     break;
                                 case 5:
-                                    C5 = C5 + s * l
+                                    C5 = C5 + s * Math.abs(l)
                                     e.setState({
                                         w5: e.state.w5 + s
                                     }), n ? e.setState({
@@ -418,6 +418,7 @@ var C5 = 0;
                                     }) : e.setState({
                                         a5: [].concat(Object(c.a)(e.state.a5), [a])
                                     })
+                            console.log(C4, W4, C5, W5, s, l)
                             }
                         }, e.state = {
                             isComplete: !1,
