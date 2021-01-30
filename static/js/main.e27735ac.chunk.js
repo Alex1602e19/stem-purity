@@ -167,9 +167,9 @@ var C5 = 0;
                         className: "text-muted"
                     }, "Questions Answered")), s.a.createElement("div", {
                         className: "col"
-                    }, s.a.createElement("h5", null, (e.count / w.length * 100).toFixed(1) + '%'), s.a.createElement("h6", {
+                    }, s.a.createElement("h5", null, (100 - e.count / w.length * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                         className: "text-muted"
-                    }, "Classic Completion")), s.a.createElement("div", {
+                    }, "Classic Purity")), s.a.createElement("div", {
                         className: "col"
                     }, s.a.createElement("h5", null, e.score + '/' + tweight), s.a.createElement("h6", {
                         className: "text-muted"
@@ -252,9 +252,9 @@ var C5 = 0;
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h2", null, (this.props.score / tweight * 100).toFixed(1) + '%'), s.a.createElement("h6", {
+                            }, s.a.createElement("h2", null, (100 - this.props.score / tweight * 100).toFixed(1) + '%'), s.a.createElement("h6", {
                                 className: "text-muted mb-0"
-                            }, "Total Weighted Completion"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
+                            }, "Total Weighted Purity"))), s.a.createElement("hr", null), t > 0 && s.a.createElement("div", {
                                 className: "progress mb-3"
                             }, s.a.createElement("div", {
                                 className: "progress-bar bg-info",
