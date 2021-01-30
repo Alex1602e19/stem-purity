@@ -75,7 +75,7 @@ var C5 = 0;
                         className: "card card-body shadow-sm"
                     }, s.a.createElement("p", null, "Click on every item you've done. After submitting the test, a \"Purity Score\" will be calculated. A \"Classic Purity Score\" will be shown for reference, which is how much you've completed, unweighted. This test also includes weighted questions, which will be calculated in a weighted score, and different category questions.  Checking off severe offenses will lower your \"purity.\" thus increasing the score, quicker than checking off minor offenses."), s.a.createElement("p", {
                         className: "text-danger font-weight-bold"
-                    }, "This is not a bucket list.", s.a.createElement("br", null), "Completion of all items on this test will likely result in looking like an idiot savant.")))))
+                    }, "This is not a bucket list.", s.a.createElement("br", null), "Completion of all items will likely result in looking like an idiot savant.")))))
                 }),
                 w = [{
                     content: "Made up your own lab procedure?",
