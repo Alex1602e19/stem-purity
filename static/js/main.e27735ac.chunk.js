@@ -65,12 +65,12 @@ var t5 = 0;
                     content: "Testing?",
                     weight: 1,
                     type: 1
-                }],
+                }]
                 var tweight = 0
                 for (i = 0; i < w.length; i++) {
                     tweight = tweight + w[i].weight
                 }
-                u = function(e) {
+            var u = function(e) {
                     return s.a.createElement("header", {
                         className: "fixed-top"
                     }, s.a.createElement("nav", {
@@ -181,7 +181,6 @@ var t5 = 0;
                                 o = this.props.w3 / t * 100,
                                 c = this.props.w4 / t * 100,
                                 r = this.props.w5 / t * 100;
-                            console.log("testtesttestestestest", this.props.w1 + -50)
                             return s.a.createElement("div", {
                                 className: "card shadow-sm result"
                             }, s.a.createElement("div", {
