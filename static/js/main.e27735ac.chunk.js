@@ -426,37 +426,37 @@ var C5 = 0;
                                 className: "row text-center mb-2"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, C1 + '/' +W1 + '(' + (100 - (C1/W1*100).toFixed(1)) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, C1 + '/' +W1 + '(' + (100 - (C1/W1*100)).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-info mb-0"
                             }, "Science Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
-                            }, this.props.w1 + '/' +t1 + '(' + (this.props.w1/t1).toFixed(1) + "%" + ')' )), s.a.createElement("div", {
+                            }, this.props.w1 + '/' +t1 + '(' + (100 - this.props.w1/t1 * 100).toFixed(1) + "%" + ')' )), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, C2 + '/' +W2 + '(' + (100 - (C2/W2*100).toFixed(1)) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, C2 + '/' +W2 + '(' + (100 - (C2/W2*100)).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-primary mb-0"
                             }, "Technology Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
-                            }, this.props.w2 + '/' +t2 + '(' + (this.props.w2/t2).toFixed(1) + "%" + ')' )), s.a.createElement("div", {
+                            }, this.props.w2 + '/' +t2 + '(' + (100 - this.props.w2/t2 * 100).toFixed(1) + "%" + ')' )), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, C3 + '/' +W3 + '(' + (100 - (C3/W3*100).toFixed(1)) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, C3 + '/' +W3 + '(' + (100 - (C3/W3*100)).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-success mb-0"
                             }, "Engineering Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
-                            }, this.props.w3 + '/' +t3 + '(' + (this.props.w3/t3).toFixed(1) + "%" + ')' ))), s.a.createElement("div", {
+                            }, this.props.w3 + '/' +t3 + '(' + (100 - this.props.w3/t3 * 100).toFixed(1) + "%" + ')' ))), s.a.createElement("div", {
                                 className: "row text-center"
                             }, s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, C4 + '/' +W4 + '(' + (100 - (C4/W4*100).toFixed(1)) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, C4 + '/' +W4 + '(' + (100 - (C4/W4*100)).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-warning mb-0"
                             }, "Mathematic Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
-                            }, this.props.w4 + '/' +t4 + '(' + (this.props.w4/t4).toFixed(1) + "%" + ')' )), s.a.createElement("div", {
+                            }, this.props.w4 + '/' +t4 + '(' + (100 - this.props.w4/t4 * 100).toFixed(1) + "%" + ')' )), s.a.createElement("div", {
                                 className: "col"
-                            }, s.a.createElement("h4", null, C5 + '/' +W5 + '(' + (100 - (C5/W5*100).toFixed(1)) + '%)'), s.a.createElement("h6", {
+                            }, s.a.createElement("h4", null, C5 + '/' +W5 + '(' + (100 - (C5/W5*100)).toFixed(1) + '%)'), s.a.createElement("h6", {
                                 className: "text-danger mb-0"
                             }, "Other Offenses"), t > 0 && s.a.createElement("small", {
                                 className: "text-muted font-weight-bold"
-                            }, this.props.w5 + '/' +t5 + '(' + (this.props.w5/t5).toFixed(1) + "%" + ')' ))), t > 0 && s.a.createElement(n.Fragment, null, s.a.createElement("hr", null), s.a.createElement("ul", {
+                            }, this.props.w5 + '/' +t5 + '(' + (100 - this.props.w5/t5 * 100).toFixed(1) + "%" + ')' ))), t > 0 && s.a.createElement(n.Fragment, null, s.a.createElement("hr", null), s.a.createElement("ul", {
                                 className: "nav nav-pills nav-fill mb-3"
                             }, s.a.createElement("li", {
                                 className: "nav-item"
