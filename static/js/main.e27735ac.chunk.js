@@ -237,7 +237,7 @@ var C5 = 0;
                         {content: "Used L'Hôpital's rule to prove differentiability of an expression?", weight: 2, type: 4},
                         {content: "Written a quick script to do a calculation that would have taken the calculator app less time?", weight: 1, type: 4},
                         {content: "Mispronounced Euler? ", weight: 1, type: 4},
-                        {content: "Mispronounced Euclid like \  "oil-clid\"?", weight: 2, type: 4},
+                        {content: "Mispronounced Euclid like \"oil-clid\"?", weight: 2, type: 4},
                         {content: "Thought 57 was prime?", weight: 1, type: 4},
                         {content: "Treated a non-tensor matrix like a tensor?", weight: 2, type: 4},
                         {content: "Used Leibinz notation manipulation where it's wrong to look algebraic?", weight: 3, type: 4},
